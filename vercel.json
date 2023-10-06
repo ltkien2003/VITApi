@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "VITApi/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "VITApi/wsgi.py"
+      }
+    ]
+}
